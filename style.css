@@ -1,0 +1,164 @@
+/* Color Inspiration from: https://www.canva.com/learn/website-color-schemes/ */
+:root {
+  --main-bg-color: #0e0b16;
+  --main-text-color: #f2f2f2;
+  --main-header-color: #a239ca;
+  --color-accent: #4717f6;
+}
+
+body {  
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.frame > *:not(nav) {
+  padding: 3% 8%;
+}
+
+h1 {
+  color: var(--main-header-color);
+}
+
+h3 {
+  color: var(--color-accent)
+}
+
+/* ===== NAVBAR ===== */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: var(--color-accent);
+}
+
+/* ===== MAIN SECTION ===== */
+main {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 15%;
+  border-radius: 50%;
+}
+
+
+
+/* ===== DIV STYLING ===== */
+section:nth-child(odd) {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+}
+
+
+
+/* ===== PORTFOLIO ===== */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  height: auto;
+}
+
+
+.portfolio-box {
+  /* Source for box-shadow property: https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 2% 0;
+  width: 30%;
+}
+
+
+.portfolio-pic {
+  max-height: 250px;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.portfolio-box ul,
+.portfolio-box li {
+  display: inline-block;
+  font-style: italic;
+  list-style-type: none;
+  margin: 15px;
+  padding: 0;
+}
+
+
+.portfolio-box a:hover {
+  opacity: 0.5;
+}
+
+
+/* ===== SKILLS ===== */
+.skills {
+  overflow: hidden;
+  text-align: center;
+}
+
+.skills h1 {
+  text-align: left;
+}
+
+.skills > div {
+  display: inline-block;
+  padding: 3.5%;
+
+}
+
+
+/* ===== RESOURCES ===== */
+.resources h3 {
+  padding-top: 15px;
+}
+
+.resources ul,
+.resources li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  object-position: bottom;
+  width: 50px;
+}
+
+
+.book-image {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  padding-right: 20px;
+}
+
+
+.resources a:hover {
+  opacity: 0.5;
+}
