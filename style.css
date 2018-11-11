@@ -1,28 +1,38 @@
 /* Color Inspiration from: https://www.canva.com/learn/website-color-schemes/ */
 :root {
   --main-bg-color: #0e0b16;
-  --main-text-color: #f2f2f2;
-  --main-header-color: #a239ca;
+  --main-text-color: #eae8ff;
+  --main-header-color: #e63462;
   --color-accent: #4717f6;
+  --color-shadow: #d1ccdc;
+  /* #8f9491 */
 }
 
 body {  
   background: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Verdana", "Geneva", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .frame > *:not(nav) {
-  padding: 3% 8%;
+  padding: 4% 10%;
 }
 
 h1 {
   color: var(--main-header-color);
 }
 
+h2,
 h3 {
-  color: var(--color-accent)
+  color: var(--color-accent);
+  padding: 1% 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 /* ===== NAVBAR ===== */
@@ -40,7 +50,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -54,6 +64,10 @@ nav li a:hover {
 /* ===== MAIN SECTION ===== */
 main {
   text-align: center;
+}
+
+main h2 {
+  color: var(--main-text-color);
 }
 
 .profile-pic {
@@ -84,9 +98,11 @@ section:nth-child(odd) {
 .portfolio-box {
   /* Source for box-shadow property: https://www.w3schools.com/css/css3_shadows.asp */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
   text-align: center;
   margin: 2% 0;
-  width: 30%;
+  padding: 1%;
+  width: 45%;
 }
 
 
@@ -113,6 +129,12 @@ section:nth-child(odd) {
 }
 
 
+@media only screen and (max-width: 800px) {
+  .portfolio-box {
+      width: 90%;
+  }
+}
+
 /* ===== SKILLS ===== */
 .skills {
   overflow: hidden;
@@ -126,39 +148,45 @@ section:nth-child(odd) {
 .skills > div {
   display: inline-block;
   padding: 3.5%;
-
 }
 
 
 /* ===== RESOURCES ===== */
-.resources h3 {
-  padding-top: 15px;
+.resources {
+  overflow: hidden;
 }
 
-.resources ul,
-.resources li {
+.resources > div {
   display: inline-block;
-  list-style-type: none;
-  padding-right: 20px;
+  padding: 0 3% 2% 0;
+  text-align: center;
+  max-width: 30%;
+  vertical-align: top;
 }
 
 
 .logo {
   height: 50px;
   object-fit: contain;
-  object-position: bottom;
-  width: 50px;
+  object-position: center;
+  width: auto;
 }
 
 
+
 .book-image {
-  display: inline-block;
-  width: 20%;
-  height: auto;
-  padding-right: 20px;
+   height: 20vh;
 }
 
 
 .resources a:hover {
   opacity: 0.5;
+}
+
+
+/* ===== FOOTER ===== */
+footer i {
+  padding: 0 3% 0 0;
+  color: var(--main-text-color);
+  font-size: 0.8rem;
 }
