@@ -8,7 +8,7 @@
   /* #8f9491 */
 }
 
-body {  
+body {
   background: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: "Verdana", "Geneva", sans-serif;
@@ -37,28 +37,32 @@ a {
 
 /* ===== NAVBAR ===== */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--main-bg-color);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--main-bg-color);
 }
 
 nav li {
-    float: left;
+  float: left;
 }
 
 nav li a {
-    display: block;
-    color: var(--main-text-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    background-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 /* ===== MAIN SECTION ===== */
@@ -131,7 +135,7 @@ section:nth-child(odd) {
 
 @media only screen and (max-width: 800px) {
   .portfolio-box {
-      width: 90%;
+    width: 90%;
   }
 }
 
