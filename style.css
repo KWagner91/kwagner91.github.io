@@ -7,19 +7,18 @@
   --second-text-color: #edf2f7;
   --color-accent: #dfe7ef;
   --color-shadow: #8b97ad;
-  /* #8f9491 */
 }
 
 body {
   background: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: "Lato", "Geneva", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
 }
 
 .frame > *:not(nav) {
-  padding: 2.5% 10%;
+  padding: 2% 10%;
 }
 
 .frame > main {
@@ -42,6 +41,10 @@ a {
 }
 
 /* ===== NAVBAR ===== */
+nav {
+  box-shadow: 0px 1px 10px #999;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -138,6 +141,10 @@ main h2 {
   padding: 0;
 }
 
+.portfolio-box h3 {
+  font-size: 1.5rem;
+}
+
 
 .portfolio-box a:hover {
   opacity: 0.5;
@@ -200,8 +207,14 @@ main h2 {
 
 
 /* ===== FOOTER ===== */
+footer {
+  background-color: var(--color-accent);
+  background-image: linear-gradient(var(--color-accent), var(--second-text-color));
+}
+
 footer i {
   padding: 0 3% 0 0;
-  color: var(--main-text-color);
-  font-size: 0.8rem;
+  color: var(--main-header-color);
 }
+
+
