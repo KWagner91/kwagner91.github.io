@@ -1,23 +1,29 @@
 /* Color Inspiration from: https://www.canva.com/learn/website-color-schemes/ */
 :root {
-  --main-bg-color: #0e0b16;
-  --main-text-color: #eae8ff;
-  --main-header-color: #e63462;
-  --color-accent: #4717f6;
-  --color-shadow: #d1ccdc;
+  --main-bg-color: #fff;
+  --main-text-color: #3a4557;
+  --main-header-color: #4e42c3;
+  --second-header-color: rgba(39,47,65,.8);
+  --second-text-color: #edf2f7;
+  --color-accent: #dfe7ef;
+  --color-shadow: #8b97ad;
   /* #8f9491 */
 }
 
 body {
   background: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: "Verdana", "Geneva", sans-serif;
+  font-family: "Lato", "Geneva", sans-serif;
   font-size: 1.2rem;
   line-height: 1.4;
 }
 
 .frame > *:not(nav) {
-  padding: 4% 10%;
+  padding: 2.5% 10%;
+}
+
+.frame > main {
+  padding-top: 5%;
 }
 
 h1 {
@@ -26,12 +32,12 @@ h1 {
 
 h2,
 h3 {
-  color: var(--color-accent);
+  color: var(--c--main-header-color);
   padding: 1% 0;
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-shadow);
   text-decoration: none;
 }
 
@@ -68,23 +74,28 @@ nav li a:hover {
 /* ===== MAIN SECTION ===== */
 main {
   text-align: center;
+  font-size: 1.5rem;
+  background-image: linear-gradient( #4e42c3, #3a4557);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
+
+main h1 {
+  color: var(--color-accent);
 }
 
 main h2 {
-  color: var(--main-text-color);
+  color: var(--color-accent);
+  padding-bottom: 3%;
 }
 
 .profile-pic {
   width: 15%;
   border-radius: 50%;
-}
-
-
-
-/* ===== DIV STYLING ===== */
-section:nth-child(odd) {
-  background-color: var(--main-text-color);
-  color: var(--main-bg-color);
 }
 
 
@@ -151,7 +162,7 @@ section:nth-child(odd) {
 
 .skills > div {
   display: inline-block;
-  padding: 3.5%;
+  padding: 1% 4.5%;
 }
 
 
