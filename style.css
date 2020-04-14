@@ -41,10 +41,6 @@ a {
 }
 
 /* ===== NAVBAR ===== */
-nav {
-  box-shadow: 0px 1px 10px #999;
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -55,6 +51,7 @@ nav ul {
   width: 100%;
   z-index: 2;
   background-color: var(--main-bg-color);
+  border-bottom: 1px double var(--main-header-color);
 }
 
 nav li {
@@ -97,7 +94,7 @@ main h2 {
 }
 
 .profile-pic {
-  width: 15%;
+  width: 20%;
   border-radius: 50%;
 }
 
@@ -119,16 +116,16 @@ main h2 {
   background: #fff;
   text-align: center;
   margin: 2% 0;
-  padding: 1%;
-  width: 45%;
+  padding: 2%;
+  width: 43%;
 }
 
 
 .portfolio-pic {
-  max-height: 250px;
-  object-fit: contain;
+  max-height: 280px;
   overflow: hidden;
-  width: 100%;
+  width: auto;
+  border: 1px solid darkgray;
 }
 
 
@@ -137,7 +134,7 @@ main h2 {
   display: inline-block;
   font-style: italic;
   list-style-type: none;
-  margin: 15px;
+  margin: 5px 15px;
   padding: 0;
 }
 
