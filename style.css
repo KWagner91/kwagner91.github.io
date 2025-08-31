@@ -17,11 +17,11 @@ body {
   line-height: 1.4;
 }
 
-.frame > *:not(nav) {
+.frame>*:not(nav) {
   padding: 2% 10%;
 }
 
-.frame > main {
+.frame>main {
   padding-top: 5%;
 }
 
@@ -143,16 +143,21 @@ main h2 {
 }
 
 /* ===== SKILLS ===== */
-.skills {
+.skills div {
   overflow: hidden;
   text-align: center;
+}
+
+.skills p,
+.skills li {
+  text-align: 'left';
 }
 
 .skills h1 {
   text-align: left;
 }
 
-.skills > div {
+.skills>div {
   display: inline-block;
   padding: 1% 4.5%;
 }
@@ -162,7 +167,7 @@ main h2 {
   overflow: hidden;
 }
 
-.resources > div {
+.resources>div {
   display: inline-block;
   padding: 0 2% 2% 0;
   text-align: center;
@@ -189,10 +194,8 @@ main h2 {
 /* ===== FOOTER ===== */
 footer {
   background-color: var(--color-accent);
-  background-image: linear-gradient(
-    var(--color-accent),
-    var(--second-text-color)
-  );
+  background-image: linear-gradient(var(--color-accent),
+      var(--second-text-color));
 }
 
 footer i {
