@@ -6,7 +6,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import profilePic from "../assets/Kwagner2.jpg";
+import profilePic from "../assets/KWagner2.jpg";
 
 const AboutSection = () => (
   <Box
